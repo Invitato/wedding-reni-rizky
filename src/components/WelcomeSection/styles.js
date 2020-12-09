@@ -1,5 +1,5 @@
 import { css, keyframes } from '@emotion/core';
-import Background from '@assets/img/default.jpg';
+import Background from './assets/wedding-welcome.jpg';
 
 export const styHero = css`
   width: 100%;
@@ -158,7 +158,6 @@ export const styWrapper = css`
 
   img {
     max-width: 80px;
-    margin-bottom: 1.3em;
   }
 
   h1 {

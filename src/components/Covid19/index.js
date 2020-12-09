@@ -14,7 +14,9 @@ function CovidSection() {
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2 className="main-font">Panduan Protokol Covid-19</h2>
+            <h2 className="main-font pr-co" style={{ fontSize: '28px' }}>
+              Panduan Protokol Covid-19
+            </h2>
             <p className="info" style={{ marginBottom: '-16px' }}>
               Keberlangsungan acara ini mengacu pada pedoman kesehatan dari Kementerian Kesehatan:
             </p>

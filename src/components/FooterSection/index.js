@@ -21,36 +21,6 @@ const ANIMATION = animations || {};
 function FooterSection({ isInvitation }) {
   return (
     <div css={styWrapper}>
-      <div id="live-wedding-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <LazyLoad {...LAZY_LOAD}>
-                <h3 className="pr-co" style={{ marginTop: '2em', fontSize: '2em' }}>{`Live Wedding ${THE_BRIDE}`}</h3>
-              </LazyLoad>
-
-              <LazyLoad height={200} offset={-10}>
-                <div style={{ animation: CUSTOM_ANIMATION }}>
-                  <CountContainer />
-                </div>
-                <div style={{ animation: CUSTOM_ANIMATION }}>
-                  <iframe
-                    title="Live Wedding"
-                    width="100%"
-                    height="400"
-                    src={YOUTUBE_EMBED}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                  <p className="info">{`Live ${WEDDING_AKAD_TIME} | ${WEDDING_AKAD}`}</p>
-                </div>
-              </LazyLoad>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div id="fh5co-couple" className="secondary-bg">
         <div className="container">
           <div className="row">

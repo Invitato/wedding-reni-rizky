@@ -10,16 +10,17 @@ export const IS_USE_PHOTO_WEDDING = false;
  * @constants
  * for Brides information
  */
-export const THE_BRIDE = 'Maya & Pajar';
-export const GIRL_NAME = 'Mayantya Kusumawicitra Harmadi';
-export const GIRL_PARENT_NAME = `Putri dari Bapak Bambang Setyo Susion Harmadi <br /> & Ibu Evi Ratnaningrum`;
-export const BOY_NAME = 'Pajar Saputra';
-export const BOY_PARENT_NAME = `Putra dari Bapak Hasan Basri Pulungan <br />& Ibu Nurainun`;
+export const THE_BRIDE = 'Reni + Rizky';
+export const GIRL_NAME = 'Reni Savira Utami, S.H';
+export const GIRL_PARENT_NAME = `Putri dari Bapak H. Sateno, S.H, M.H<br /> & Hj. Kasminem`;
+export const BOY_NAME = 'Rizky Agus Triyanto, S.Kom';
+export const BOY_PARENT_NAME = `Putra dari Bapak Drs. H. Subandi<br />& Hj. Lilik Haryanti Pujiastuti`;
 
 /**
  * @constants - SEO Requirement
  */
-export const SEO_IMAGE = '';
+export const SEO_IMAGE =
+  'https://user-images.githubusercontent.com/10141928/101640360-fd8cc800-3a62-11eb-828d-7f7085e43953.jpg';
 export const SEO_URL = 'https://invitato.net';
 export const SEO_TITLE = `The Wedding of ${THE_BRIDE} by Invitao.net`;
 export const SEO_DESCRIPTION = `Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan keberkahan. - ${THE_BRIDE}`;
@@ -28,7 +29,9 @@ export const SEO_DESCRIPTION = `Dengan memohon Rahmat dan Ridho Illahi, teriring
  * @constants - google maps
  * for google maps configuration
  */
-export const GOOGLE_MAPS_LINK = `https://g.page/HARRISHotelSentralandSemarang?share`;
+export const GOOGLE_MAPS_LINK = `https://goo.gl/maps/QZdXKXXZPRhJviYW8`;
+export const GOOGLE_MAPS_EMBED = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.219059321957!2d110.4429384142868!3d-6.983455370326392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708cb76c98241f%3A0x6afb73af24d41bf9!2sGrand%20Mosque%20of%20Central%20Java!5e0!3m2!1sen!2sid!4v1607523454264!5m2!1sen!2sid`;
+export const GOOGLE_MAPS_ADDRESS = 'Jl. Gajah Raya, Sambirejo, Kec. Gayamsari, Kota Semarang, Jawa Tengah 50166';
 
 /**
  * @constants - epoch time
@@ -36,17 +39,17 @@ export const GOOGLE_MAPS_LINK = `https://g.page/HARRISHotelSentralandSemarang?sh
  * use this website for convert local time to epoch time
  * https://www.epochconverter.com/
  */
-export const EPOCH_START_EVENT = 1607734800;
-export const EPOCH_END_EVENT = 1607752800;
+export const EPOCH_START_EVENT = 1609203600;
+export const EPOCH_END_EVENT = 1609221600;
 
 /**
  * @constants - wedding information
  */
-export const WEDDING_AKAD = 'Sabtu, 12 December 2020';
+export const WEDDING_AKAD = 'Selasa, 29 December 2020';
 export const WEDDING_AKAD_TIME = '08:00 WIB';
-export const WEDDING_RESEPSI = 'Sabtu, 12 December 2020';
+export const WEDDING_RESEPSI = 'Selasa, 29 December 2020';
 export const WEDDING_RESEPSI_TIME = '11:00 - 13:00 WIB';
-export const WEDDING_LOCATION = `Diamond Ballroom, Pesona Hotel <br /> Jl. Depok No. 33 Semarang`;
+export const WEDDING_LOCATION = `Convention Hall Masjid Agung Jawa Tengah, Semarang`;
 export const WEDDING_LOCATION_AKAD = WEDDING_LOCATION;
 
 /**

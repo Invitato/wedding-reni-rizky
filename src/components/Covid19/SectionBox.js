@@ -8,7 +8,7 @@ function SectionBox({ icon, text }) {
         <img src={icon} alt="icon" className="img" />
       </div>
       <div className="text__section">
-        <span className="text__info">{text}</span>
+        <span className="text__info ">{text}</span>
       </div>
     </div>
   );

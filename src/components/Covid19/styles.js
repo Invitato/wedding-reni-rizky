@@ -21,6 +21,7 @@ export const styBoxWrapper = css`
   .text__info {
     font-weight: 500;
     font-size: 1.2em;
+    color: var(--font-black-ui);
   }
 
   @media screen and (max-width: 480px) {
