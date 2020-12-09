@@ -3,9 +3,9 @@
   --font-white-ui: #ecf0f1;
   --font-black-ui: #222831;
   --font-blue-ui: #3282b8;
-  --font-primary: #a18f72;
-  --font-primary-2: #9c8d73;
-  --secondary-bg: #f5f1eb;
+  --font-primary: #d19fbe;
+  --font-primary-2: #d19fbe;
+  --secondary-bg: #ffe6f4;
   --primary-bg: #ecf0f1;
 
   /* font type variables */
@@ -57,17 +57,17 @@ body {
 
 @media only screen and (max-width: 400px) {
   .title {
-    font-size: 2.5em !important;
+    font-size: 2.5em;
   }
 
   .sub-title {
-    margin: 0 0 8px 0 !important;
+    margin: 0 0 8px 0;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .sub-title {
-    margin: 0 0 8px 0 !important;
+    margin: 0 0 8px 0;
   }
 }
 

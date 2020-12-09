@@ -133,7 +133,7 @@ export const styBackground = css`
 
   @media screen and (max-width: 400px) {
     .title {
-      font-size: 30px;
+      font-size: 40px;
     }
 
     .sub-title {
@@ -155,6 +155,13 @@ export const styBackground = css`
 export const styWrapper = css`
   color: #fff;
   margin-top: -8em;
+
+  .wrapper__counter {
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   img {
     max-width: 80px;
@@ -200,7 +207,7 @@ export const styWrapper = css`
     margin: auto auto 30px auto;
     font-family: var(--font-family-title);
     font-weight: normal;
-    font-size: 2.2em;
+    font-size: 1.6em;
   }
 
   .margin__bottom {
@@ -209,6 +216,10 @@ export const styWrapper = css`
 
   a {
     color: #f14e95;
+  }
+
+  .title {
+    font-size: 3.5em;
   }
 
   @media screen and (max-width: 330px) {
@@ -233,9 +244,9 @@ export const styWrapperCount = css`
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: var(--font-primary);
+  // background: var(--font-primary);
   margin: 8px;
-  border-radius: 14px 0;
+  border-radius: 50%;
   position: relative;
   color: #fff;
   animation: pulse 1s infinite alternate;

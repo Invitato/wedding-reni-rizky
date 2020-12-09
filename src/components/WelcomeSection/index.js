@@ -6,7 +6,8 @@ import { animations } from 'react-animation';
 import WeddingImg from './assets/wedding-logo.png';
 import ScrollToDown from './ScrollToDown';
 import { styWrapper, styHero, styBackground } from './styles';
-import { THE_BRIDE } from '@/constants';
+import { THE_BRIDE, WEDDING_DATE } from '@/constants';
+import CounterItem from './CountContainer';
 
 const DELAY_TIME = 1500;
 const ANIMATION = animations || {};
@@ -60,9 +61,12 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
           <div className="row" css={styWrapper}>
             <div className="col-md-8 col-md-offset-2 text-center" style={{ animation: ANIMATION.bounceIn }}>
               <img src={WeddingImg} alt="wedding-dinda-indra" />
-              <h1 className="title">The Wedding of</h1>
-              <div style={{ marginTop: '1em' }}>
-                <h2 className="to-dearest-name">{THE_BRIDE}</h2>
+              <h1 className="title">{THE_BRIDE}</h1>
+              <span>{WEDDING_DATE}</span>
+              <div style={{ marginTop: '2em' }}>
+                <span>Dear,</span>
+                <h2 className="to-dearest-name">{guestName || 'Friends'}</h2>
+                <CounterItem />
               </div>
             </div>
           </div>

@@ -48,16 +48,18 @@ export const EPOCH_END_EVENT = 1609221600;
 export const WEDDING_AKAD = 'Selasa, 29 December 2020';
 export const WEDDING_AKAD_TIME = '08:00 WIB';
 export const WEDDING_RESEPSI = 'Selasa, 29 December 2020';
-export const WEDDING_RESEPSI_TIME = '11:00 - 13:00 WIB';
+export const WEDDING_RESEPSI_TIME = '11:00 - 12:00 WIB';
+export const WEDDING_RESEPSI_TIME_SHIFT_B = '12:00 - 13:00 WIB';
 export const WEDDING_LOCATION = `Convention Hall Masjid Agung Jawa Tengah, Semarang`;
 export const WEDDING_LOCATION_AKAD = WEDDING_LOCATION;
+export const WEDDING_DATE = '29.12.2020';
 
 /**
  * @constants
  * for footer sections
  */
-export const SOUND_BY = `Where Is Dream│START UP 스타트업 OST│10cm│Sheet 악보│Piano Cover`;
-export const SOUND_URL = 'https://youtu.be/_OqVChL--8Y';
+export const SOUND_BY = `Cinta Luar Biasa - Andmesh Kamaleng (Saxophone Cover by Desmond Amos)`;
+export const SOUND_URL = 'https://youtu.be/qgDh8LHaa_k';
 
 /**
  * @constants
