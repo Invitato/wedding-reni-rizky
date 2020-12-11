@@ -1,5 +1,3 @@
-import { easings } from 'react-animation';
-
 /**
  * @constant
  * global flag for website
@@ -60,17 +58,6 @@ export const WEDDING_DATE = '29.12.2020';
  */
 export const SOUND_BY = `Cinta Luar Biasa - Andmesh Kamaleng (Saxophone Cover by Desmond Amos)`;
 export const SOUND_URL = 'https://youtu.be/qgDh8LHaa_k';
-
-/**
- * @constants
- * constants for custom animation
- */
-const FALLBACK_EASING = easings || {};
-export const CUSTOM_ANIMATION = `pop-in 1.5s ${FALLBACK_EASING.easeOutBack} forwards`;
-export const LAZY_LOAD = {
-  height: 200,
-  offset: -150,
-};
 
 /**
  * @constant

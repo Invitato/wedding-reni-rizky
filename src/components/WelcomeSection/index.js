@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { object, string, bool, func } from 'prop-types';
 import { animateScroll } from 'react-scroll';
-import { animations } from 'react-animation';
 
 import WeddingImg from './assets/wedding-logo.png';
 import ScrollToDown from './ScrollToDown';
@@ -10,7 +9,6 @@ import { THE_BRIDE, WEDDING_DATE } from '@/constants';
 import CounterItem from './CountContainer';
 
 const DELAY_TIME = 1500;
-const ANIMATION = animations || {};
 
 function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, codeLink, onClickDetail }) {
   const [loading, setLoading] = useState(false);
@@ -59,7 +57,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
         <div className="overlay"></div>
         <div className="container">
           <div className="row" css={styWrapper}>
-            <div className="col-md-8 col-md-offset-2 text-center" style={{ animation: ANIMATION.bounceIn }}>
+            <div className="col-md-8 col-md-offset-2 text-center">
               <img src={WeddingImg} alt="wedding-dinda-indra" />
               <h1 className="title">{THE_BRIDE}</h1>
               <span>{WEDDING_DATE}</span>
@@ -70,7 +68,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
               </div>
             </div>
           </div>
-          <div className="row" style={{ animation: ANIMATION.fadeIn }}>
+          <div className="row">
             <ScrollToDown loading={loading} onClick={handleShowDetail} />
           </div>
         </div>
