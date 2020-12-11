@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { object, string, bool, func } from 'prop-types';
 import { animateScroll } from 'react-scroll';
 
-import WeddingImg from './assets/wedding-logo.png';
-import ScrollToDown from './ScrollToDown';
-import { styWrapper, styHero, styBackground } from './styles';
 import { THE_BRIDE, WEDDING_DATE } from '@/constants';
+
+import WithAnimation from '../WithAnimation';
 import CounterItem from './CountContainer';
+import ScrollToDown from './ScrollToDown';
+
+import WeddingImg from './assets/wedding-logo.png';
+import { styWrapper, styHero, styBackground } from './styles';
 
 const DELAY_TIME = 1500;
 
@@ -58,14 +61,18 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
         <div className="container">
           <div className="row" css={styWrapper}>
             <div className="col-md-8 col-md-offset-2 text-center">
-              <img src={WeddingImg} alt="wedding-dinda-indra" />
-              <h1 className="title">{THE_BRIDE}</h1>
-              <span>{WEDDING_DATE}</span>
-              <div style={{ marginTop: '2em' }}>
-                <span>Dear,</span>
-                <h2 className="to-dearest-name">{guestName || 'Friends'}</h2>
-                <CounterItem />
-              </div>
+              <WithAnimation>
+                <img src={WeddingImg} alt="wedding-dinda-indra" />
+                <h1 className="title">{THE_BRIDE}</h1>
+                <span>{WEDDING_DATE}</span>
+              </WithAnimation>
+              <WithAnimation delay={300}>
+                <div style={{ marginTop: '2em' }}>
+                  <span>Dear,</span>
+                  <h2 className="to-dearest-name">{guestName || 'Friends'}</h2>
+                  <CounterItem />
+                </div>
+              </WithAnimation>
             </div>
           </div>
           <div className="row">
