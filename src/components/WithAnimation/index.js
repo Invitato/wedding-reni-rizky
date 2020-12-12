@@ -10,7 +10,7 @@ import animationStyles from './styles';
  */
 const INTERSECT_OPTIONS = {
   root: null,
-  rootMargin: '0px 0px -30% 0px',
+  rootMargin: '0px 0px -20% 0px',
   threshold: [0.05, 0.3, 0.6, 0.95],
 };
 

@@ -1,8 +1,10 @@
 import { css } from '@emotion/core';
+import Background from '../Covid19/assets/bg.jpg';
 
 export const styWrapper = css`
+  background-image: url(${Background});
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   width: 100%;
 
   .img__arrow {

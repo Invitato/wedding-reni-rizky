@@ -65,3 +65,12 @@ export const SOUND_URL = 'https://youtu.be/qgDh8LHaa_k';
  */
 export const YOUTUBE_LINK = 'https://youtu.be/K0ted2DWU-s';
 export const YOUTUBE_EMBED = 'https://www.youtube.com/embed/K0ted2DWU-s';
+
+/**
+ * @constant
+ * for footer & copyright section
+ */
+export const URL_INVITATO = 'https://invitato.net';
+export const URL_IG_INVITATO = 'https://www.instagram.com/dindadipoyono/';
+export const URL_WA_INVITATO =
+  'https://wa.me/+628112778189?text=Hi%20Kak,%20aku%20mau%20pesan%20undangan%20online%20nih!';

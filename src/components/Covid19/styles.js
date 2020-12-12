@@ -1,11 +1,6 @@
 import { css } from '@emotion/core';
-import Background from './assets/bg.jpg';
 
 export const styWrapper = css`
-  background-image: url(${Background});
-  background-size: cover;
-  background-position: bottom;
-
   .info {
     font-size: 16px;
   }
