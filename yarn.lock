@@ -1128,11 +1128,6 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@jackyef/use-intersect@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@jackyef/use-intersect/-/use-intersect-0.0.6.tgz#423b1203ad82a1973be5a68492a9851551ea2846"
-  integrity sha512-rApoeUuQVYiQeZMkbboyJgn5fnvvEl6+ZOAINGR+acHhVBG0kxGGxA6JyeBTEbcyjBaT3eXVjdxy/zxBxzqj3A==
-
 "@jest/types@^25.5.0":
   version "25.5.0"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-25.5.0.tgz#4d6a4793f7b9599fc3680877b856a97dbccf2a9d"

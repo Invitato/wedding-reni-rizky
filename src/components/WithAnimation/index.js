@@ -1,35 +1,11 @@
 import React, { useState } from 'react';
 import { node, oneOf, number } from 'prop-types';
-import useIntersect from '@jackyef/use-intersect';
+import useIntersect from '@hooks/useIntersect';
 import noop from '@helpers/noop';
 import animationStyles from './styles';
 
-/**
- * Simple div that wraps your element and animate it when the component is revealed on screen
- * to achieve it we are using useState useIntersect hooks
- */
-const rootMargin = '0px 0px -30% 0px';
-
 const WithAnimation = ({ type, children, ...rest }) => {
-  const [showed, setShowed] = useState(false);
-
-  const animStyle = animationStyles[type] || noop;
-  const targetRef = useIntersect(
-    () => {
-      setShowed(true);
-    },
-    { rootMargin },
-    true,
-  );
-
-  return (
-    <>
-      {!showed && <div ref={targetRef} />}
-      <div css={animStyle(showed)} {...rest}>
-        {children}
-      </div>
-    </>
-  );
+  return children;
 };
 
 WithAnimation.propTypes = {
