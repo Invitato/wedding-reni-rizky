@@ -16,7 +16,7 @@ function LocationSection() {
                   <strong className="main-font text__title">Lokasi Acara</strong>
                   <br />
                 </p>
-                <p>{GOOGLE_MAPS_ADDRESS}</p>
+                <p style={{ fontSize: '14px' }}>{GOOGLE_MAPS_ADDRESS}</p>
               </WithAnimation>
             </div>
           </div>

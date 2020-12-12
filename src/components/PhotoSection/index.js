@@ -1,22 +1,37 @@
 import React from 'react';
-import ImageGallery from 'react-image-gallery';
-import 'react-image-gallery/styles/css/image-gallery.css';
-import { photos } from './photo-data';
-import { THE_BRIDE } from '@/constants';
+
+import WithAnimation from '../WithAnimation';
+import Photo1 from '../WelcomeSection/assets/wedding-welcome.jpg';
+import Photo2 from '../WeddingSection/assets/wedding-box.jpg';
 
 function PhotoSection() {
+  const renderImage = (src) => {
+    return (
+      <WithAnimation>
+        <img
+          src={src}
+          alt=""
+          style={{ display: 'block', maxWidth: '300px', margin: '8px auto 16px auto', borderRadius: '8px' }}
+        />
+      </WithAnimation>
+    );
+  };
+
   return (
-    <div id="fh5co-testimonial" className="secondary-bg">
+    <div style={{ backgroundColor: '#CFACAA' }} className="padding__content">
       <div className="container">
         <div className="row">
-          <div className="row">
-            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <h2 className="main-font pr-co">{THE_BRIDE}</h2>
-            </div>
+          <div className="col-md-8 col-md-offset-2 text-center">
+            <WithAnimation>
+              <h2 className="main-font" style={{ color: '#fff', margin: '0' }}>
+                Momen Lamaran
+              </h2>
+            </WithAnimation>
           </div>
           <div className="row">
-            <div className="col-md-10 col-md-offset-1">
-              <ImageGallery autoPlay infinite lazyLoad items={photos} showBullets={false} />;
+            <div style={{ padding: '16px 24px 24px 24px' }}>
+              {renderImage(Photo1)}
+              {renderImage(Photo2)}
             </div>
           </div>
         </div>

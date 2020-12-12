@@ -6,23 +6,21 @@ import { styEventBox } from './styles';
 function WeddingInfoBox({ title, date, time, description }) {
   return (
     <div css={styEventBox}>
-      <div className="col-md-6 col-sm-12">
-        <h3 className="text-center">{title}</h3>
-        <div className="box__col">
-          <i className="icon-clock"></i>
-          <span className="col__text">{time}</span>
-        </div>
-        <div className="box__col">
-          <i className="icon-calendar"></i>
-          <span>{date}</span>
-        </div>
-        {description && (
-          <div className="box__col">
-            <i className="icon-location-pin"></i>
-            <span dangerouslySetInnerHTML={{ __html: description }} />
-          </div>
-        )}
+      <h3 className="text-center">{title}</h3>
+      <div className="box__col">
+        <i className="icon-clock"></i>
+        <span className="col__text">{time}</span>
       </div>
+      <div className="box__col">
+        <i className="icon-calendar"></i>
+        <span>{date}</span>
+      </div>
+      {description && (
+        <div className="box__col-bottom">
+          <i className="icon-location-pin"></i>
+          <span dangerouslySetInnerHTML={{ __html: description }} />
+        </div>
+      )}
     </div>
   );
 }

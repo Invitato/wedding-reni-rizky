@@ -48,7 +48,7 @@ export const WEDDING_AKAD_TIME = '08:00 WIB';
 export const WEDDING_RESEPSI = 'Selasa, 29 December 2020';
 export const WEDDING_RESEPSI_TIME = '11:00 - 12:00 WIB';
 export const WEDDING_RESEPSI_TIME_SHIFT_B = '12:00 - 13:00 WIB';
-export const WEDDING_LOCATION = `Convention Hall, Masjid Agung Jawa Tengah`;
+export const WEDDING_LOCATION = `Convention Hall, <br /> Masjid Agung Jawa Tengah`;
 export const WEDDING_LOCATION_AKAD = WEDDING_LOCATION;
 export const WEDDING_DATE = '29.12.2020';
 

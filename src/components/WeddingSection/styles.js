@@ -39,17 +39,17 @@ export const styWrapper = css`
 `;
 
 export const styEventBox = css`
-  border: 4px solid var(--font-primary);
+  border: 2px solid var(--font-primary);
   background-color: rgba(255, 255, 255, 0.8);
   padding: 16px;
   width: 100%;
-  float: left;
-  display: flex;
+  display: block;
   margin-bottom: 16px;
-  border-radius: 8px;
 
   h3 {
     padding-bottom: 16px;
+    text-transform: uppercase;
+    font-size: 2rem;
     border-bottom: 1px solid var(--font-primary);
   }
 
@@ -59,6 +59,19 @@ export const styEventBox = css`
 
     span {
       margin-left: 8px;
+    }
+  }
+
+  .box__col-bottom {
+    display: flex;
+
+    i {
+      margin-top: 4px;
+      font-size: 16px;
+    }
+
+    span {
+      margin-left: 6px;
     }
   }
 `;

@@ -15,16 +15,16 @@ function FooterSection({ isInvitation }) {
         <div className="row padding__content">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
             <WithAnimation>
+              <h2 className="main-font pr-co">Apakah kamu hadir?</h2>
               <p className="info">
-                Sehubungan dengan kondisi saat ini mengenai pembatasan jumlah tamu undangan, Tanpa mengurangi rasa
-                hormat, kami mohon segala doa dan restu dari bapak/ ibu/saudara/i, dan kami berharap tetap dapat
-                menjalin tali silahturahmi melalui media online.
+                Atas kehadiran & do'a restu saudara/i, <br /> kami ucapkan terima kasih.
               </p>
             </WithAnimation>
             <WithAnimation delay={100}>
-              <h2 className="main-font pr-co">Terima Kasih</h2>
+              <h2 className="main-font pr-co" style={{ fontSize: '3rem' }}>
+                Wassalamualaikum Wr.Wb
+              </h2>
             </WithAnimation>
-            <ArrowIcon className="img__arrow" />
           </div>
         </div>
       </div>

@@ -32,8 +32,10 @@ function MainLayout({ children }) {
         <meta name="twitter:creator" content="@idindrakusuma" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+
         <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Andika+New+Basic:wght@400;700&display=swap"
+          data-react-helmet="true"
+          href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
           rel="stylesheet"
         />
       </Helmet>

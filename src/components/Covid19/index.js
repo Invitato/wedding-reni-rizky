@@ -1,6 +1,7 @@
 import React from 'react';
 
 import WithAnimation from '../WithAnimation';
+import SectionBox from './SectionBox';
 
 import DATA from './rules-data';
 import { styWrapper } from './styles';
@@ -12,9 +13,9 @@ function CovidSection() {
         <div className="row">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
             <WithAnimation>
-              <h2 className="main-font pr-co text__title">Panduan Protokol Covid-19</h2>
+              <h2 className="main-font pr-co text__title">Protokol Covid-19</h2>
               <p className="info" style={{ marginBottom: '-16px' }}>
-                <i>Keberlangsungan acara ini mengacu pada pedoman kesehatan dari Kementerian Kesehatan:</i>
+                <i>Keberlangsungan acara ini mengacu pada pedoman protokol pernikahan kota Semarang:</i>
               </p>
             </WithAnimation>
           </div>
@@ -23,11 +24,9 @@ function CovidSection() {
         <div className="row">
           <div className="col-md-12">
             <WithAnimation>
-              <ul className="order__styles">
-                {DATA.map((item) => {
-                  return <li>{item.text}</li>;
-                })}
-              </ul>
+              {DATA.map((item) => {
+                return <SectionBox text={item.text} icon={item.icon} />;
+              })}
             </WithAnimation>
           </div>
         </div>

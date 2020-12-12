@@ -14,8 +14,8 @@
   --size-content-padding: 3em 0;
 
   /* font type variables */
-  --font-family-title: 'Caveat', cursive;
-  --font-family-content: 'Andika New Basic', sans-serif;
+  --font-family-title: 'La Belle Aurore', cursive;
+  --font-family-content: 'PT Serif', sans-serif;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 */
 .text,
 .text__title {
-  font-size: 2.5em;
+  font-size: 3rem;
 }
 
 .text__sub-title {

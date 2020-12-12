@@ -14,19 +14,17 @@ const INTERSECT_OPTIONS = {
   threshold: [0.05, 0.3, 0.6, 0.95],
 };
 
-const WithAnimation = ({ type, children, onShowAnimation, delay }) => {
+const WithAnimation = ({ type, children, onShowAnimation, ...rest }) => {
   const [showed, setShowed] = useState(false);
 
   const animStyle = animationStyles[type] || noop;
   const targetRef = useIntersect(() => {
-    setTimeout(() => {
-      setShowed(true);
-      onShowAnimation();
-    }, delay);
+    setShowed(true);
+    onShowAnimation();
   }, INTERSECT_OPTIONS);
 
   return (
-    <div ref={targetRef} css={animStyle(showed)}>
+    <div ref={targetRef} css={animStyle(showed)} {...rest}>
       {children}
     </div>
   );
