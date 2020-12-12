@@ -13,12 +13,10 @@ function CopyRight() {
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <p>
+            <p style={{ fontSize: '12px' }}>
               &copy; 2020 {THE_BRIDE}. All Rights Reserved. <br />
               Song by{' '}
-              <a href={SOUND_URL} {...REFERER} className="pr-co">
-                {SOUND_BY}
-              </a>
+              <a href={SOUND_URL} {...REFERER} className="pr-co" dangerouslySetInnerHTML={{ __html: SOUND_BY }} />
               <br />
               Icon by{' '}
               <a href="https://flaticon.com" {...REFERER}>

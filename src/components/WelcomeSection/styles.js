@@ -161,12 +161,11 @@ export const styWrapper = css`
   }
 
   h1 {
-    margin: 0px;
-    font-size: 70px;
+    margin: 16px 0 0 0;
     line-height: 1.5;
     font-family: var(--font-family-title);
     color: #fff;
-    font-size: 4.5em;
+    font-size: 3.5em;
   }
 
   h2 {

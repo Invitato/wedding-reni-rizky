@@ -33,7 +33,7 @@ export const styWrapper = (withBackground) => css`
 
   .text__bride,
   .text__groom {
-    font-size: 2.3em;
+    font-size: 2.5rem;
   }
 
   .img__symbol {

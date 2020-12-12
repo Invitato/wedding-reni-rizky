@@ -25,7 +25,7 @@ function CovidSection() {
           <div className="col-md-12">
             <WithAnimation>
               {DATA.map((item) => {
-                return <SectionBox text={item.text} icon={item.icon} />;
+                return <SectionBox key={item.text} text={item.text} icon={item.icon} />;
               })}
             </WithAnimation>
           </div>

@@ -56,7 +56,7 @@ export const WEDDING_DATE = '29.12.2020';
  * @constants
  * for footer sections
  */
-export const SOUND_BY = `Cinta Luar Biasa - Andmesh Kamaleng (Saxophone Cover by Desmond Amos)`;
+export const SOUND_BY = `Cinta Luar Biasa - Andmesh Kamaleng <br />(Saxophone Cover by Desmond Amos)`;
 export const SOUND_URL = 'https://youtu.be/qgDh8LHaa_k';
 
 /**

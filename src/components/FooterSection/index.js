@@ -2,7 +2,6 @@ import React from 'react';
 import { bool } from 'prop-types';
 
 import WithAnimation from '../WithAnimation';
-import ArrowIcon from '../common/ArrowIcon';
 import CovidSection from '../Covid19';
 import CopyRight from './CopyRight';
 import { styWrapper } from './styles';
@@ -13,15 +12,15 @@ function FooterSection({ isInvitation }) {
       <CovidSection />
       <div className="secondary-bg" style={{ padding: '0 16px' }}>
         <div className="row padding__content">
-          <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+          <div className="col-md-8 col-md-offset-2 text-center">
             <WithAnimation>
-              <h2 className="main-font pr-co">Apakah kamu hadir?</h2>
+              <h2 className="main-font text__title">Apakah kamu hadir?</h2>
               <p className="info">
                 Atas kehadiran & do'a restu saudara/i, <br /> kami ucapkan terima kasih.
               </p>
             </WithAnimation>
             <WithAnimation delay={100}>
-              <h2 className="main-font pr-co" style={{ fontSize: '3rem' }}>
+              <h2 className="main-font pr-co text__title" style={{ fontSize: '2.5rem' }}>
                 Wassalamualaikum Wr.Wb
               </h2>
             </WithAnimation>
