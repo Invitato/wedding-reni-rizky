@@ -5,10 +5,9 @@ import { animateScroll } from 'react-scroll';
 import { THE_BRIDE, WEDDING_DATE } from '@/constants';
 
 import WithAnimation from '../WithAnimation';
-import CounterItem from './CountContainer';
 import ScrollToDown from './ScrollToDown';
 
-import WeddingImg from './assets/wedding-logo.png';
+import WeddingImg from './assets/logo-wedding.png';
 import { styWrapper, styHero, styBackground } from './styles';
 
 const DELAY_TIME = 1500;
@@ -50,28 +49,14 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
 
   return (
     <div css={styHero}>
-      <header
-        id="fh5co-header"
-        role="banner"
-        className="fh5co-cover"
-        css={styBackground}
-        data-stellar-background-ratio="0.5"
-      >
-        <div className="overlay"></div>
+      <header className="fh5co-cover" css={styBackground}>
         <div className="container">
           <div className="row" css={styWrapper}>
             <div className="col-md-8 col-md-offset-2 text-center">
               <WithAnimation>
                 <img src={WeddingImg} alt="wedding-dinda-indra" />
-                <h1 className="title">{THE_BRIDE}</h1>
-                <span>{WEDDING_DATE}</span>
-              </WithAnimation>
-              <WithAnimation delay={300}>
-                <div style={{ marginTop: '2em' }}>
-                  <span>Dear,</span>
-                  <h2 className="to-dearest-name">{guestName || 'Friends'}</h2>
-                  <CounterItem />
-                </div>
+                <h2 className="text__date">{WEDDING_DATE}</h2>
+                <h1>{THE_BRIDE}</h1>
               </WithAnimation>
             </div>
           </div>

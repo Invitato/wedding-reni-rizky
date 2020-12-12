@@ -1,7 +1,16 @@
 import { css } from '@emotion/core';
+import Background from './assets/bg.jpg';
 
 export const styWrapper = css`
+  padding: var(--size-content-padding);
   background: #fefdfd;
+  background-size: cover;
+  background-image: url(${Background});
+  background-position: center;
+
+  .title {
+    font-size: 4em;
+  }
 
   .sub-title {
     color: var(--font-black-ui);

@@ -3,7 +3,7 @@ import Background from './img/bg-cream.png';
 
 export const styWrapper = (withBackground) => css`
   width: 100%;
-  min-height: 70vh;
+  padding: var(--size-content-padding);
   background-color: #fefdfd;
 
   ${withBackground &&

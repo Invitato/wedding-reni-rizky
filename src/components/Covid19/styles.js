@@ -1,4 +1,23 @@
 import { css } from '@emotion/core';
+import Background from './assets/bg.jpg';
+
+export const styWrapper = css`
+  background-image: url(${Background});
+  background-size: cover;
+  background-position: bottom;
+
+  .info {
+    font-size: 16px;
+  }
+
+  .order__styles {
+    li {
+      color: var(--font-black-ui);
+      line-height: 2;
+      font-size: 16px;
+    }
+  }
+`;
 
 export const styBoxWrapper = css`
   display: flex;

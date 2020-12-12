@@ -4,7 +4,13 @@ export const styWrapper = css`
   background-size: cover;
   background-position: bottom;
   width: 100%;
-  min-height: 70vh;
+
+  .img__arrow {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    filter: brightness(0.5);
+  }
 
   .sub-title {
     color: #828282;

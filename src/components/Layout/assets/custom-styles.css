@@ -3,14 +3,19 @@
   --font-white-ui: #ecf0f1;
   --font-black-ui: #222831;
   --font-blue-ui: #3282b8;
-  --font-primary: #d19fbe;
-  --font-primary-2: #d19fbe;
-  --secondary-bg: #ffe6f4;
+  --font-primary: #dd3987;
+  --font-primary-option: #cfacaa;
+  --font-secondary: var(--font-black-ui);
+  --secondary-bg: #f6d4d2;
   --primary-bg: #ecf0f1;
+
+  /* SIZE DEFAULT */
+  --size-min-height: 60vh;
+  --size-content-padding: 3em 0;
 
   /* font type variables */
   --font-family-title: 'Caveat', cursive;
-  --font-family-content: 'PT Serif', serif;
+  --font-family-content: 'Andika New Basic', sans-serif;
 }
 
 body {
@@ -18,17 +23,45 @@ body {
   color: var(--font-primary) !important;
 }
 
+/**
+  * chore styles 
+  * author: Indra Kusuma
+  * github: @idindrakusuma
+*/
+.text,
+.text__title {
+  font-size: 2.5em;
+}
+
+.text__sub-title {
+  font-size: 1.5em;
+}
+
+.color__primary {
+  color: var(--font-primary) !important;
+}
+
+.color__secondary {
+  color: var(--font-secondary) !important;
+}
+
+.padding__content {
+  padding: var(--size-content-padding);
+}
+
 .pr-co {
   color: var(--font-primary) !important;
 }
 
-.pr-co2 {
-  color: var(--font-primary-2) !important;
+.img__center {
+  display: block;
+  margin: 0 auto;
 }
 
+.bg__secondary,
 .secondary-bg {
-  background: var(--secondary-bg);
-  background-color: var(--secondary-bg);
+  background: var(--secondary-bg) !important;
+  background-color: var(--secondary-bg) !important;
 }
 
 .main-font {
@@ -53,6 +86,20 @@ body {
 
 .white-font {
   color: var(--font-white-ui) !important;
+}
+
+/**
+  * Bootstrap override
+  * for enhance section
+*/
+.btn-primary {
+  background-color: var(--font-primary);
+  color: var(--font-white-ui) !important;
+}
+
+.btn-primary > a {
+  color: var(--font-white-ui) !important;
+  font-weight: normal;
 }
 
 @media only screen and (max-width: 400px) {

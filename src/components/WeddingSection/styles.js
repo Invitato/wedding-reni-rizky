@@ -1,26 +1,22 @@
 import { css } from '@emotion/core';
-import Background from './assets/wedding-box.jpg';
+import Background from './assets/bg.jpg';
 
 export const styWrapper = css`
+  padding: var(--size-content-padding);
   background-image: url(${Background});
   background-size: cover;
   background-position: center;
   width: 100%;
   min-height: 70vh;
-  color: #fff !important;
-  // filter: grayscale(1);
+  color: var(--font-black-ui);
 
   .bismillah {
-    color: #fff !important;
     font-size: 16px !important;
-    font-family: sans-serif;
   }
 
-  .sub-title {
-    color: #fff !important;
+  .text__sub {
     font-size: 16px;
-    font-family: 'Work Sans', Arial, sans-serif;
-    font-weight: 400 !important;
+    color: var(--font-black-ui);
 
     @media screen and (max-width: 400px) {
       font-size: 15px !important;
@@ -42,6 +38,31 @@ export const styWrapper = css`
   }
 `;
 
+export const styEventBox = css`
+  border: 4px solid var(--font-primary);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 16px;
+  width: 100%;
+  float: left;
+  display: flex;
+  margin-bottom: 16px;
+  border-radius: 8px;
+
+  h3 {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--font-primary);
+  }
+
+  .box__col {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 8px;
+    }
+  }
+`;
+
 export const styButtonWrapper = css`
   display: flex;
   justify-content: center;
@@ -54,7 +75,6 @@ export const styButtonWrapper = css`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     font-weight: 500px;
     border-radius: 24px;
     background: #f14e95;

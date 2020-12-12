@@ -154,25 +154,19 @@ export const styBackground = css`
 
 export const styWrapper = css`
   color: #fff;
-  margin-top: -8em;
-
-  .wrapper__counter {
-    border: 1px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  margin-top: -30rem;
 
   img {
     max-width: 80px;
   }
 
   h1 {
-    margin-bottom: 0px;
+    margin: 0px;
     font-size: 70px;
     line-height: 1.5;
     font-family: var(--font-family-title);
     color: #fff;
+    font-size: 4.5em;
   }
 
   h2 {
@@ -192,6 +186,12 @@ export const styWrapper = css`
 
   .getting-married {
     margin-top: -12px;
+  }
+
+  .text__date {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: -1rem;
   }
 
   .to-dearest {
@@ -236,55 +236,6 @@ export const styWrapper = css`
 
     .to-dearest-name {
       margin: auto auto 16px auto;
-    }
-  }
-`;
-
-export const styWrapperCount = css`
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  // background: var(--font-primary);
-  margin: 8px;
-  border-radius: 50%;
-  position: relative;
-  color: #fff;
-  animation: pulse 1s infinite alternate;
-
-  span {
-    text-transform: none;
-    font-weight: normal;
-  }
-
-  h3 {
-    font-size: 30px;
-    color: #fff;
-    margin: 20px 0 0 0;
-  }
-
-  @media screen and (max-width: 500px) {
-    width: 75px;
-    height: 75px;
-    margin: 4px;
-    font-size: 12px;
-
-    h3 {
-      font-size: 24px;
-    }
-  }
-
-  @media screen and (max-width: 380px) {
-    width: 55px;
-    height: 55px;
-
-    h3 {
-      margin-top: 12px;
-      margin-bottom: -4px;
-      font-size: 16px;
-    }
-
-    span {
-      font-size: 10px;
     }
   }
 `;

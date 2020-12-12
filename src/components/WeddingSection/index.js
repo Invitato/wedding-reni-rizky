@@ -10,41 +10,43 @@ import {
   WEDDING_LOCATION_AKAD,
 } from '@/constants';
 
+import WithAnimation from '../WithAnimation';
 import WeddingInfoBox from './WeddingInfoBox';
 import { styWrapper } from './styles';
 
 function WeddingSection({ isInvitation }) {
   return (
-    <div id="fh5co-event" css={styWrapper}>
-      <div className="overlay" />
+    <div css={styWrapper}>
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2 className="main-font main-font__wedding">
-              Akad Nikah dan <br />
-              Resepsi Pernikahan
-            </h2>
-            <span className="sub-title sub-title__wedding">Insha Allah akan diselenggarakan pada:</span>
+            <WithAnimation>
+              <h2 className="main-font color__primary main-font__wedding">Assalamualaikum Wr. Wb</h2>
+              <p className="text__sub">
+                Tanpa mengurangi rasa hormat, dengan ini kami mengundang Bapak/ Ibu/ Saudara(i) untuk hadir pada Acara
+                resepsi pernikahan kami :
+              </p>
+            </WithAnimation>
           </div>
         </div>
         <div className="row">
           <div className="col-md-10 col-md-offset-1">
-            <div>
+            <WithAnimation delay={500}>
               <WeddingInfoBox
                 title="Akad Nikah"
                 time={WEDDING_AKAD_TIME}
                 date={WEDDING_AKAD}
                 description={WEDDING_LOCATION_AKAD}
               />
-            </div>
-            <div>
+            </WithAnimation>
+            <WithAnimation delay={800}>
               <WeddingInfoBox
                 title="Resepsi Pernikahan"
                 time={WEDDING_RESEPSI_TIME}
                 date={WEDDING_RESEPSI}
                 description={WEDDING_LOCATION}
               />
-            </div>
+            </WithAnimation>
           </div>
         </div>
       </div>
