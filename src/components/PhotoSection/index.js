@@ -5,9 +5,9 @@ import Photo1 from '../WelcomeSection/assets/wedding-welcome.jpg';
 import Photo2 from '../WeddingSection/assets/wedding-box.jpg';
 
 function PhotoSection() {
-  const renderImage = (src) => {
+  const renderImage = (src, delay) => {
     return (
-      <WithAnimation>
+      <WithAnimation delay={delay}>
         <img
           src={src}
           alt=""
@@ -30,8 +30,8 @@ function PhotoSection() {
           </div>
           <div className="row">
             <div style={{ padding: '16px 24px 24px 24px' }}>
-              {renderImage(Photo1)}
-              {renderImage(Photo2)}
+              {renderImage(Photo1, 100)}
+              {renderImage(Photo2, 300)}
             </div>
           </div>
         </div>

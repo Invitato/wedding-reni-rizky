@@ -4,7 +4,7 @@ import { animateScroll } from 'react-scroll';
 
 import { THE_BRIDE, WEDDING_DATE } from '@/constants';
 
-import WithAnimation from '../WithAnimation';
+import WithAnimation from '../WithAnimation/UseIntersect';
 import ScrollToDown from './ScrollToDown';
 
 import WeddingImg from './assets/logo-wedding.png';

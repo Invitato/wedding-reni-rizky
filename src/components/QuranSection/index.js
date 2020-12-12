@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { bool } from 'prop-types';
 
-import WithAnimation from '../WithAnimation';
+import WithAnimation from '../WithAnimation/UseIntersect';
 import Countdown from '../Countdown';
 import { styWrapper } from './styles';
 

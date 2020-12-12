@@ -10,7 +10,7 @@ import animationStyles from './styles';
  */
 const rootMargin = '0px 0px -30% 0px';
 
-const WithAnimation = ({ type, children, ...rest }) => {
+const WithAnimation = ({ type, children, delay, ...rest }) => {
   const [showed, setShowed] = useState(false);
 
   const animStyle = animationStyles[type] || noop;

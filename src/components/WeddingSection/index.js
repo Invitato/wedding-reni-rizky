@@ -10,7 +10,7 @@ import {
   WEDDING_LOCATION_AKAD,
 } from '@/constants';
 
-import WithAnimation from '../WithAnimation';
+import WithAnimation from '../WithAnimation/UseIntersect';
 import WeddingInfoBox from './WeddingInfoBox';
 import { styWrapper } from './styles';
 

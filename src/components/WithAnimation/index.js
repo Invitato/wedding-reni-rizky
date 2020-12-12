@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { node, oneOf, number } from 'prop-types';
-import useIntersect from '@hooks/useIntersect';
-import noop from '@helpers/noop';
-import animationStyles from './styles';
+import { animations } from 'react-animation';
+import LazyLoad from 'react-lazyload';
 
-const WithAnimation = ({ type, children, ...rest }) => {
-  return children;
+const ANIMATION = animations || {};
+
+const WithAnimation = ({ type, children, delay, ...rest }) => {
+  return (
+    <LazyLoad height={delay}>
+      <div style={{ animation: ANIMATION.fadeInUp }}>{children}</div>
+    </LazyLoad>
+  );
 };
 
 WithAnimation.propTypes = {
