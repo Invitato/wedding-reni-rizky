@@ -16,7 +16,7 @@ const WithAnimation = ({ type, children, delay, ...rest }) => {
   const animStyle = animationStyles[type] || noop;
   const targetRef = useIntersect(
     () => {
-      setShowed(true);
+      setTimeout(setShowed(true), delay);
     },
     { rootMargin },
     true,
