@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { bool } from 'prop-types';
 
 import WithAnimation from '../WithAnimation/UseIntersect';
-import Countdown from '../Countdown';
 import { styWrapper } from './styles';
 
 function HelloSection({ isInvitation }) {
@@ -14,7 +13,6 @@ function HelloSection({ isInvitation }) {
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
               <WithAnimation delay={500}>
                 <h3 className="text__title main-font">Bismillahirrahmanirrahim</h3>
-                <Countdown />
               </WithAnimation>
               <WithAnimation delay={700}>
                 <p className="text__arabic">

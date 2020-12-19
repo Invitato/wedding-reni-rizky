@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { object, string, bool, func } from 'prop-types';
 import { animateScroll } from 'react-scroll';
 
-import { THE_BRIDE, WEDDING_DATE } from '@/constants';
+import { THE_BRIDE } from '@/constants';
 
+import Countdown from '../Countdown';
 import WithAnimation from '../WithAnimation/UseIntersect';
 import ScrollToDown from './ScrollToDown';
 
-import WeddingImg from './assets/logo-wedding.png';
+import WeddingImg from './assets/logo-wedding-cincin.png';
 import { styWrapper, styHero, styBackground } from './styles';
 
 const DELAY_TIME = 1500;
@@ -55,8 +56,9 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
             <div className="col-md-8 col-md-offset-2 text-center">
               <WithAnimation>
                 <img src={WeddingImg} alt="wedding-dinda-indra" />
-                <h2 className="text__date">{WEDDING_DATE}</h2>
+                <h2 className="text__date">The wedding of</h2>
                 <h1>{THE_BRIDE}</h1>
+                <Countdown />
               </WithAnimation>
             </div>
           </div>
