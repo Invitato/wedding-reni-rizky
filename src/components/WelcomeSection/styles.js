@@ -154,7 +154,7 @@ export const styBackground = css`
 
 export const styWrapper = css`
   color: #fff;
-  margin-top: -30rem;
+  margin-top: -10rem;
 
   img {
     max-width: 80px;
@@ -188,9 +188,11 @@ export const styWrapper = css`
   }
 
   .text__date {
-    font-size: 20px;
+    font-size: 2.5rem;
     font-weight: normal;
-    margin-bottom: -1rem;
+    margin-bottom: -3rem;
+    font-family: var(--font-family-title);
+    margin-top: 1rem;
   }
 
   .to-dearest {

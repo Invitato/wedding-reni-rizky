@@ -10,7 +10,7 @@ export const styWrapperCount = css`
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: var(--font-primary-option);
+  background: #d09fbd;
   margin: 8px;
   border-radius: 50%;
   position: relative;
